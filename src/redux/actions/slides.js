@@ -1,11 +1,18 @@
 import actionTypes from '../../utils/actionTypes';
-
-const { ADD_SLIDES } = actionTypes;
+const { ADD_SLIDES, UPDATE_SLIDES } = actionTypes;
 
 export const addSlides = (slides) => {
     return {
         type: ADD_SLIDES,
         slides
+    }
+}
+
+
+export const updateSlide = (id) => {
+    return {
+        type: UPDATE_SLIDES,
+        id
     }
 }
 

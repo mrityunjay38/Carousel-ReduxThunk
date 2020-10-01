@@ -1,20 +1,32 @@
 .slide {
-    max-height: 25em;
-    min-height: 25em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: black;
+  max-height: 25em;
+  min-height: 25em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
 }
 
-.slide img{
-    width: 100%;
+.slide img {
+  width: 100%;
+  display: none;
 }
 
 .show {
-    display: block;
+  display: block !important;
 }
 
-.hide {
-    display: none;
+.spinner {
+  animation: rotation 1s infinite linear;
+  width: 10%;
+  color: white;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Header from '../Header';
 import Slide from '../Slide';
-import Controls from '../Controls';
+import Player from '../Player';
 import './index.css';
 
 const Slider = () => {
@@ -9,7 +9,7 @@ const Slider = () => {
         <div className="carousel">
             <Header />
             <Slide />
-            <Controls />
+            <Player />
         </div>
     )
 }

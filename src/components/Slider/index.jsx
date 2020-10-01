@@ -1,11 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from '../Header';
 import Slide from '../Slide';
 import Controls from '../Controls';
 import './index.css';
 
 const Slider = () => {
-
     return (
         <div className="carousel">
             <Header />

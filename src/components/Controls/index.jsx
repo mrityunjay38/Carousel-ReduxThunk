@@ -6,17 +6,21 @@ import { ReactComponent as Prev } from "../../assets/img/backward.svg";
 import "./index.css";
 
 const Controls = () => {
-    const [playing, setPlaying] = useState(false);
+    const [isPlaying, setIsPlaying] = useState(true);
+
+    const play = () => setIsPlaying(true);
+    const pause = () => setIsPlaying(false);
+
   return (
     <div className="controls">
       <div>
         <Prev />
       </div>
       <div>
-        {!playing ? (
-          <Play />
+        {!isPlaying ? (
+          <Play onClick={play} />
         ) : (
-          <Pause />
+          <Pause onClick={pause} />
         )}
       </div>
       <div>

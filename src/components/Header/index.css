@@ -1,0 +1,9 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    text-align: center;
+    max-height: 2em;
+    min-height: 2em;
+}

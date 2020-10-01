@@ -1,0 +1,16 @@
+.controls {
+    padding: 1em;
+    max-height: 3em;
+}
+
+.controls, .controls div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.controls svg {
+    width: 25%;
+    height: 25%;
+    cursor: pointer;
+}

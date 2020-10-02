@@ -5,10 +5,11 @@ import { ReactComponent as Spinner } from "../../assets/img/spinner.svg";
 
 const Slide = () => {
   const slides = useSelector((state) => state.slides);
+  const { loading } = useSelector(state => state.player);
 
   return (
     <div className="slide">
-      {/* {loading ? <Spinner className="spinner" /> : null} */}
+      {loading ? <Spinner className="spinner" /> : null}
       {slides.map((slide) => (
         <img
           className={slide.visibility ? "show" : undefined}

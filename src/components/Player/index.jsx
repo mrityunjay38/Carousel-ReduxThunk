@@ -19,6 +19,7 @@ const Controls = () => {
 
   const next = () => {
     if(index === 0){
+      dispatch(spinner({loading: false}));
       dispatch(nextPrev({currentIndex: 0}));
     }
     else if(index > slides.length - 1){
@@ -50,6 +51,7 @@ const Controls = () => {
       }
     }, 3000);
     return () => clearInterval(interval);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   },[index, slides, isPlaying]);
 
   return (

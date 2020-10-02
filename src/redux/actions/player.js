@@ -11,7 +11,6 @@ export const spinner = (spinner) => {
 }
 
 export const nextPrev = (index) => {
-    console.log(index);
     return (dispatch, getState) => {
         const { currentIndex } = index;
         const { slides } = getState();

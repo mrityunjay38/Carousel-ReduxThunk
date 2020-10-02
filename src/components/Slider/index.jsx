@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../Header';
 import Slide from '../Slide';
 import Player from '../Player';
+import ProgressBar from '../ProgressBar';
 import './index.css';
 
 const Slider = () => {
@@ -9,6 +10,7 @@ const Slider = () => {
         <div className="carousel">
             <Header />
             <Slide />
+            <ProgressBar />
             <Player />
         </div>
     )

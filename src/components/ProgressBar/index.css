@@ -1,0 +1,24 @@
+.progress-bar {
+    border-radius: 50px;
+    min-height: 1em;
+    display: flex;
+    align-items: center;
+    padding: 0 2px;
+    background: tomato;
+    overflow: auto;
+    margin: 1px auto;
+}
+
+.bar {
+    max-height: 0.2em;
+    border-radius: 50px;
+    background: chocolate;
+    box-shadow: 0 0 20px grey;
+    padding: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6em;
+    font-weight: 800;
+}

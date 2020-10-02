@@ -16,9 +16,6 @@ export const nextPrev = (index) => {
         const { slides } = getState();
         dispatch(updateSlide(currentIndex));
         dispatch(slide(slides[currentIndex]));
-        return {
-            type: NEXT_PREV,
-            index
-        }
+        dispatch({type: NEXT_PREV, index});
     }
 }
